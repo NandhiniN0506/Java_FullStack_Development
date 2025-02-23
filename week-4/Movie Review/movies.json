@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Deadpool and Wolverine",
+        "poster": "movies_images/Deadpool and Wolverine.jpg",
+        "rating": "8.8"
+    },
+    {
+        "title": "saw-1",
+        "poster": "movies_images/saw-1.jpg",
+        "rating": "8.6"
+    },
+    {
+        "title": "inside out-2",
+        "poster": "movies_images/inside out-2.jpg",
+        "rating": "8.8"
+    },
+    {
+        "title": "legally blonde",
+        "poster": "movies_images/legally blonde.jpg",
+        "rating": "8.6"
+    },
+    {
+        "title": "venom",
+        "poster": "movies_images/venom.jpg",
+        "rating": "8.8"
+    }
+
+]
