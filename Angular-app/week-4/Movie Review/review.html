@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: rgb(45, 42, 42);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MOVIE</h1>
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Search for a movie..." onkeyup="searchMovies()">
+                <button>🔍</button>
+            </div>            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Submit a Movie Review</h2>
+        <form action="/submit-review" method="post">
+            <label for="movie-name">Movie Name:</label>
+            <input type="text" id="movie-name" name="movie_name" required>
+
+            <label for="review-text">Your Review:</label>
+            <textarea id="review-text" name="review_text" rows="5" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+</body>
+</html>

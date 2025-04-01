@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 400px;
+    background: url('banner.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 60%;
+    max-width: 600px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+    /* Adds spacing between the icon and input */
+}
+
+.search-bar input {
+    flex-grow: 1;
+    /* Allows the input field to take the remaining space */
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    /* Set a max width */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 20px;
+}
+
+.movie-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    /* Set a fixed width */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 400px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images fill the space while maintaining aspect ratio */
+    border-radius: 8px;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+    color: black;
+}
+
+.movie-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        justify-content: center;
+    }
+
+    .movie-card {
+        width: 100%;
+        /* Full width for small screens */
+        max-width: 300px;
+    }
+}
+.about-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}

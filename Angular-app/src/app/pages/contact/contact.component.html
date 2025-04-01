@@ -1,0 +1,29 @@
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      
+      <label for="name">Name:</label>
+      <input id="name" type="text" formControlName="name" />
+      <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
+        <small *ngIf="contactForm.controls['name'].errors?.['required']">Name is required.</small>
+        <small *ngIf="contactForm.controls['name'].errors?.['minlength']">Minimum 3 characters required.</small>
+      </div>
+  
+      <label for="email">Email:</label>
+      <input id="email" type="email" formControlName="email" />
+      <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
+        <small *ngIf="contactForm.controls['email'].errors?.['required']">Email is required.</small>
+        <small *ngIf="contactForm.controls['email'].errors?.['email']">Enter a valid email.</small>
+      </div>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" formControlName="message"></textarea>
+      <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
+        <small *ngIf="contactForm.controls['message'].errors?.['required']">Message is required.</small>
+        <small *ngIf="contactForm.controls['message'].errors?.['minlength']">Minimum 10 characters required.</small>
+      </div>
+  
+      <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+    </form>
+  </div>
+  

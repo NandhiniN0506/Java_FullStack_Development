@@ -1,0 +1,58 @@
+/* General Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Title Styling */
+  .logo .title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFD700;
+  }
+  
+  /* Navigation Styling */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+  }
+  
+  /* NASA Logo Styling */
+  .nasa-logo img {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nasa-logo img:hover {
+    transform: scale(1.1);
+  }
+  
