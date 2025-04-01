@@ -1,0 +1,19 @@
+<div class="date-picker-container">
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" [(ngModel)]="selectedDate" [max]="maxDate">
+    <button (click)="fetchAPOD()">View APOD</button>
+  </div>
+  
+  <!-- Animated Card for APOD Content -->
+  <div *ngIf="apodData" class="apod-card animate-card">
+    <h2>{{ apodData.title }}</h2>
+    <p class="date">{{ apodData.date }}</p>
+  
+    <div class="image-container">
+      <img *ngIf="apodData.media_type === 'image'" [src]="apodData.url" alt="APOD Image">
+      <iframe *ngIf="apodData.media_type === 'video'" [src]="apodData.url" frameborder="0"></iframe>
+    </div>
+  
+    <p class="explanation">{{ apodData.explanation }}</p>
+  </div>
+  

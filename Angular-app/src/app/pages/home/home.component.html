@@ -1,0 +1,21 @@
+<div class="container text-center mt-5">
+  <h1 class="mb-3">Welcome to Our NASA SPACE NEWS</h1>
+  <p>You have visited this site <strong>{{ visitCount }}</strong> times.</p>
+
+  <!-- Show Login if User is Not Logged In -->
+  <div *ngIf="!user">
+    <app-login (loginSuccess)="handleLogin($event)"></app-login>
+  </div>
+
+  <!-- Show User Info & Protected Page Access if Logged In -->
+  <div *ngIf="user" class="mt-4">
+    <h2>Welcome, <span class="text-primary">{{ user }}</span>! 👋</h2>
+    <p>You now have access to protected pages.</p>
+
+    <div class="d-flex justify-content-center gap-3 mt-3">
+      <a routerLink="/apod-archive" class="btn btn-primary">📅 View APOD Archive</a>
+      <a routerLink="/latest-apod" class="btn btn-success">🌠 View Latest APOD</a>
+      <button (click)="logout()" class="btn btn-danger">🚪 Logout</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+    <h2>{{ apodData.title }}</h2>
+    <p><strong>Date:</strong> {{ apodData.date }}</p>
+    <img [src]="apodData.url" *ngIf="apodData.media_type === 'image'" class="apod-image">
+    <iframe *ngIf="apodData.media_type === 'video'" [src]="apodData.url" frameborder="0"></iframe>
+    <p>{{ apodData.explanation }}</p>
+    <button routerLink="/apod-archive">Back</button>
+  </div>
+  
