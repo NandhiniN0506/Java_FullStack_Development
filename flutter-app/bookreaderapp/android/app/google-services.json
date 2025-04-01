@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "194370004351",
+    "project_id": "bookdatabase111",
+    "storage_bucket": "bookdatabase111.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194370004351:android:3a7cd16e0dfd0cd793664a",
+        "android_client_info": {
+          "package_name": "com.example.book_reader_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ6ojBRG2x9uXF9-hpyWFzoREGNkC2ZsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194370004351:android:087ee6bddc976d4b93664a",
+        "android_client_info": {
+          "package_name": "com.example.bookreader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ6ojBRG2x9uXF9-hpyWFzoREGNkC2ZsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194370004351:android:f4e5e3afb51dba8993664a",
+        "android_client_info": {
+          "package_name": "com.example.bookreaderapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ6ojBRG2x9uXF9-hpyWFzoREGNkC2ZsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
